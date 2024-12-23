@@ -1,0 +1,38 @@
+{
+	"name": "autopusoy",
+	"version": "1.0.0",
+	"author": {
+		"name": "janleigh",
+		"url": "https://github.com/janleigh/autopusoy"
+	},
+	"license": "AGPL-3.0-only",
+	"type": "module",
+	"module": "src/index.ts",
+	"scripts": {
+		"format": "bun prettier --write src",
+		"format:check": "bun prettier --check src",
+		"lint": "bun eslint src --ext .ts",
+		"lint:fix": "bun eslint src --ext .ts --fix",
+		"start:development": "NODE_ENV=development node --trace-deprecation .",
+		"start:production": "NODE_ENV=production node ."
+	},
+	"devDependencies": {
+		"@sapphire/cli": "^1.9.3",
+		"@types/bun": "^1.1.14",
+		"@typescript-eslint/eslint-plugin": "^8.18.1",
+		"@typescript-eslint/parser": "^8.18.1",
+		"eslint": "^9.17.0",
+		"prettier": "^3.4.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"@sapphire/decorators": "^6.1.1",
+		"@sapphire/framework": "^5.3.1",
+		"@sapphire/pieces": "^4.3.1",
+		"@sapphire/plugin-logger": "^4.0.2",
+		"discord.js": "^14.16.3",
+		"dotenv": "^16.4.7"
+	}
+}
